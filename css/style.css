@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+*, ::after, ::before{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --red: hsl(14, 86%, 42%);
+    --green: hsl(159, 69%, 38%);
+    --rose-50: hsl(20, 50%, 98%);
+    --rose-100: hsl(13, 31%, 94%);
+    --rose-300: hsl(14, 25%, 72%);
+    --rose-400: hsl(7, 20%, 60%);
+    --rose-500: hsl(12, 20%, 44%);
+    --rose-900: hsl(14, 65%, 9%);
+    --body-font: "Red Hat Text", serif;
+}
+
+body{
+    font-family: var(--body-font);
+    font-size: 16px;
+    background: #eee;
+}
+
+.main{
+    padding: 30px 15px;
+}
+
+.products__list{
+    display: grid;
+    gap: 2em;
+}
+
+.products__title{
+    margin-bottom: 2em;
+}
+
+.product__container{
+
+}
+
+.product__picture{
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.product__img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product__cart {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%, -0%);
+}
+
+.cart__button{
+    display: block;
+    align-items: center;
+    border: 1px solid var(--rose-900);
+    padding: 10px 30px;
+    border-radius: 30px;
+    background: var(--rose-50);
+    text-decoration: none;
+    color: black;
+}
+
+.cart__img{
+
+}
+
+.product__cat{
+    font-size: .8em;
+    color: var(--rose-400);
+    margin-bottom: .5em;
+}
+
+.product__title{
+    margin-bottom: .5em;
+    font-weight: bold;
+}
+
+.product__price{
+    color: var(--red);
+    font-weight: 700;
+}
+
+.mycart{
+    background: var(--rose-50);
+    padding: 20px;
+    min-height: 150px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.mycart__title{
+    color: var(--red);
+}
+
+.mycart__picture{
+    width: 100%;
+
+}
+
+.mycart__img{
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+}
+
+.mycart__empty{
+    text-align: center;
+}
+
+@media(min-width: 769px){
+    .main{
+        display: grid;
+        grid-template-columns: 4fr 2fr;
+        gap: 2em;
+        padding: 30px 80px;
+    }
+
+    .products{
+
+    }
+
+    .container{
+
+    }
+
+    .products__title{
+        margin-bottom: 1em;
+    }
+
+    .products__list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .product__cart {
+        bottom: -60px;
+        left: 15%;
+        transform: translate(-0%, -85%);
+    }
+
+    .product__cat{
+        font-size: .8em;
+        color: var(--rose-400);
+        margin-bottom: .5em;
+    }
+
+    .product__title{
+        margin-bottom: .5em;
+        font-weight: bold;
+    }
+
+    .product__price{
+        color: var(--red);
+        font-weight: 700;
+    }
+
+}
